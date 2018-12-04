@@ -1,5 +1,5 @@
 # coding-problems
-coding problems from various sources folder
+learning coding basics from various sources
 
 # python
 currently learning about python functions and if else conditions
