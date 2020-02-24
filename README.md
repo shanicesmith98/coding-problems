@@ -8,3 +8,6 @@ using youtube tutorials for guidance
 # javascript
 currently learning javascript libraries and functions
 using http://jsforcats.com/ for guidance
+
+# java
+currently relearning java through [test automation u](https://testautomationu.applitools.com/java-programming-course/)
