@@ -31,7 +31,7 @@ public class RollTheDie {
         }
         
         if (currentSpace < gameSpaces || currentSpace > gameSpaces) {
-                System.out.println("Game over! You landed on ended on space " + currentSpace + " after 5 rolls. Try again next time!");
+                System.out.println("Game over! You ended on space " + currentSpace + " after 5 rolls. Try again next time!");
             }
     }
 }
