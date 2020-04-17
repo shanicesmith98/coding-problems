@@ -1,13 +1,13 @@
 # coding-problems
 learning coding basics from various sources
 
-# python
+## python
 currently learning about python functions and if else conditions
 using youtube tutorials for guidance
 
-# javascript
+## javascript
 currently learning javascript libraries and functions
 using http://jsforcats.com/ for guidance
 
-# java
-currently relearning java through [test automation u](https://testautomationu.applitools.com/java-programming-course/)
+## java
+currently relearning java through [test automation u](https://testautomationu.applitools.com/java-programming-course/) and codecademy
