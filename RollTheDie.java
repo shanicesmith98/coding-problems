@@ -26,7 +26,7 @@ public class RollTheDie {
                 break;
             }
             
-            die = random.nextInt(6) + 1; // generates a new random number for next loop increment
+            die = random.nextInt(6) + 1;
             
         }
         
