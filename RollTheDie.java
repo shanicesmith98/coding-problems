@@ -15,20 +15,21 @@ public class RollTheDie {
             
             if (currentSpace == gameSpaces) {
                 int winningRoll = i;
-                System.out.println("You've won on your " + winningRoll + " roll. Congrats!");
+                System.out.println("Roll #" + i + ": You've rolled a " + die + ". Congrats, you've won on your " + winningRoll + " roll.");
                 break; // breaks out of loop
             }
             else if (currentSpace < gameSpaces) {
                 System.out.println("Roll #" + i + ": You've rolled a " + die + ". You are now on space " + currentSpace + " and have " + spacesLeft + " more to go.");
             }
             else if (currentSpace > gameSpaces) {
-                System.out.println("Error.. You've gone off the board!");
+                System.out.println("Roll #" + i + ": Error.. You've rolled a " + die + " and gone off the board!");
                 break;
             }
             
-            die = random.nextInt(6) + 1;
+            die = random.nextInt(6) + 1; // generates a new random number for next loop increment
             
         }
+        
         if (currentSpace < gameSpaces || currentSpace > gameSpaces) {
                 System.out.println("Game over! You landed on ended on space " + currentSpace + " after 5 rolls. Try again next time!");
             }
