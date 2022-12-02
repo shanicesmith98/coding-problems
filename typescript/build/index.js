@@ -1,20 +1,20 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PriorityQueue = void 0;
 class PriorityQueue {
     constructor() {
         this.queue = {};
         this.length = 0;
     }
     get getItems() {
-        console.log(this.queue);
-        return;
+        return this.queue;
     }
     get getLength() {
         return this.length;
     }
     add(item, priority) {
         if (this.queue.hasOwnProperty(priority)) {
-            console.log(`Priority key ${priority} already exists`);
-            return;
+            return `Priority key ${priority} already exists`;
         }
         this.queue[priority] = item;
         this.length++;
@@ -22,8 +22,7 @@ class PriorityQueue {
     }
     pop() {
         if (this.getLength === 0) {
-            console.log("this queue is empty");
-            return;
+            return "this queue is empty";
         }
         let priorityKeys = Object.keys(this.queue);
         priorityKeys = priorityKeys.sort((a, b) => b - a);
@@ -35,6 +34,7 @@ class PriorityQueue {
         return highestPriorityItem;
     }
 }
+exports.PriorityQueue = PriorityQueue;
 const fruitBasket = new PriorityQueue();
 fruitBasket.add("apple", '3');
 fruitBasket.add("banana", '404');

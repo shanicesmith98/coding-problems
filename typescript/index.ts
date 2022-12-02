@@ -1,39 +1,36 @@
-interface PriorityQueue {
+export interface PriorityQueue {
     queue: {
         [key: string]: string;
     };
     length: number;
 }
 
-class PriorityQueue {
+export class PriorityQueue {
     constructor() {
         this.queue = {};
         this.length = 0;
     }
 
-    get getItems() {
-        console.log(this.queue);
-        return;
+    public get getItems(): object {
+        return this.queue;
     }
 
-    get getLength() {
+    private get getLength(): number {
         return this.length;
     }
 
-    add(item: string, priority: string) {
+    public add(item: string, priority: string): object | string {
         if (this.queue.hasOwnProperty(priority)) {
-            console.log(`Priority key ${priority} already exists`);
-            return;
+            return `Priority key ${priority} already exists`;
         }
         this.queue[priority] = item;
         this.length++;
         return this.queue;
     }
 
-    pop() {
+    public pop(): string {
         if (this.getLength === 0) {
-            console.log("this queue is empty");
-            return;
+            return "this queue is empty";
         }
 
         let priorityKeys: string[] = Object.keys(this.queue);
